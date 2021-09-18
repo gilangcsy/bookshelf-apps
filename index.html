@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column-layout">
+                <h1 align="center">Belum Dibaca</h1>
+                <ul class="cards" id="book-list-uncompleted">
+                    <!-- <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <h2 class="card_title">Judul</h2>
+                                <p class="card_text">
+                                    Nama - Tahun
+                                </p>
+                                <button class="btn card_btn">Selesai</button>
+                                <br>
+                                <button class="btn card_btn">Hapus</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="column-center">
+                <h1 align="center">BOOKSHELF APPS</h1>
+                <div class="form-data">
+                    <form id="book-form">
+                        <label for="title">Judul</label>
+                        <input type="text" id="title" name="title" placeholder="Masukkan Judul.." required>
+
+                        <label for="author">Penulis</label>
+                        <input type="text" id="author" name="author" placeholder="Masukkan Penulis.." required>
+
+                        <label for="year">Tahun</label>
+                        <input type="number" id="year" name="year" placeholder="Masukkan Tahun.." required>
+
+                        <input type="checkbox" id="isComplete" name="isComplete" placeholder="Masukkan Penulis..">
+                        <label for="isComplete">Sudah Dibaca</label>
+
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <form id="search-form" style="margin-top: 20px">
+                        <label for="search">Pencarian Judul</label>
+                        <input type="text" id="search" name="search" placeholder="Masukkan Judul..">
+
+                        <input type="submit" value="Cari">
+                    </form>
+                </div>
+
+            </div>
+            <div class="column-layout">
+                <h1 align="center">Sudah Dibaca</h1>
+                <ul class="cards" id="book-list-completed">
+                    <!-- <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <h2 class="card_title">Judul</h2>
+                                <p class="card_text">
+                                    Nama - Tahun
+                                </p>
+                                <button class="btn card_btn">Selesai</button>
+                                <br>
+                                <button class="btn card_btn">Hapus</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/function.js"></script>
+</body>
+
+</html>
